@@ -1,0 +1,177 @@
+/* Categories.css */
+
+.navbar {
+    background-color: #4a4360;
+
+    color: #ffffff;
+    padding: 10px 20px;
+    width: 100%;
+    min-width: 320px; /* Adjust the minimum width as per your design */
+    z-index: 10000;
+    font-size: 1rem;
+}
+
+.navbarcontent {
+    display: flex;
+    padding: 10px;
+    position: relative;
+    user-select: none;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dropdownScroll {
+    max-height: 300px; /* Adjust max height as needed */
+    overflow-y: auto;
+}
+
+.list {
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-top: 5px;
+    cursor: pointer;
+}
+
+.category_checkboxes {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    white-space: nowrap; /* Prevent items from wrapping */
+    user-select: none;
+    justify-content: space-evenly;
+}
+
+.category_checkboxes li {
+    margin-bottom: 15px;
+    margin-right: 10px; /* Adjust spacing between items */
+}
+.category_checkboxes label {
+    font-size: 1rem;
+    cursor: pointer;
+}
+.categoryscroll {
+    /* style={{ overflowX: "auto", maxWidth: "1000px" }} */
+    overflow-x: auto;
+    max-width: 2000px;
+}
+/* Define scrollbar styles */
+.categoryscroll::-webkit-scrollbar {
+    margin-top: 3px;
+    height: 5px; /* Width of the scrollbar */
+    width: 1px;
+}
+
+/* Track */
+.categoryscroll::-webkit-scrollbar-track {
+    background: transparent; /* Color of the track */
+}
+
+/* Handle */
+.categoryscroll::-webkit-scrollbar-thumb {
+    background: #888; /* Color of the handle */
+}
+
+/* Handle on hover */
+.categoryscroll::-webkit-scrollbar-thumb:hover {
+    background: #555; /* Color of the handle when hovered */
+}
+
+/* Add any additional responsive styles here */
+@media screen and (max-width: 600px) {
+    .navbarcontent {
+        align-items: flex-start;
+    }
+    .dropdownScroll {
+        width: 100%; /* Ensure full width on small screens */
+        margin-left: 0; /* Adjust margin as needed */
+    }
+    .category_checkboxes {
+        margin-left: 0; /* Adjust margin as needed */
+    }
+}
+@media screen and (max-width: 600px) {
+    .hide {
+        display: none;
+    }
+    /* Adjust checked state styles for small screens if necessary */
+}
+
+/* Categories.css */
+
+.dropdownScroll {
+    max-height: 300px; /* Adjust max height as needed */
+    overflow-y: auto;
+    border-radius: 5px; /* Add border radius for rounded corners */
+    padding: 10px; /* Add padding for spacing */
+    background-color: #fff; /* Set background color */
+    width: 270px;
+}
+
+.list {
+    margin-bottom: 8px; /* Add margin between list items */
+}
+
+input[type="checkbox"] {
+    margin-right: 8px; /* Add margin between checkbox and label */
+}
+
+/* ------------------checkbox-------- */
+/* Define custom styles for the checked state */
+.category_checkboxes input[type="checkbox"]:checked::before,
+.list input[type="checkbox"]:checked::before {
+    content: "\2713"; /* Unicode character for checkmark */
+    display: block;
+    width: 18px;
+    height: 15px;
+    text-align: center;
+    line-height: 10px;
+    position: absolute;
+    top: -3px;
+    left: -1px;
+    color: #1c78da; /* Color of the checkmark */
+    font-size: 30px;
+    font-weight: 550;
+}
+/*All category box*/
+.dropdown-basic {
+    background-color: #4a4360;
+}
+.category_checkboxes input[type="checkbox"],
+.list input[type="checkbox"] {
+    /* Ensure the default checkbox is hidden */
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    /* Use custom styles for the checkbox */
+    width: 15px;
+    height: 15px;
+    border: 1px solid #999; /* Border color for the checkbox */
+    border-radius: 3px;
+    background-color: white;
+    position: relative;
+    top: 3px;
+    cursor: pointer;
+}
+
+/* Define custom styles for the checked state */
+.category_checkboxes input[type="checkbox"]:checked::before,
+.list input[type="checkbox"]:checked::before {
+    content: "\2713"; /* Unicode character for checkmark */
+    display: block;
+    width: 18px;
+    height: 15px;
+    text-align: center;
+    line-height: 10px;
+    position: absolute;
+    top: -3px;
+    left: -1px;
+    color: #1c78da; /* Color of the checkmark */
+    font-size: 30px;
+    font-weight: 550;
+}
+/*All category box*/
+.dropdown-basic {
+    background-color: #4a4360;
+}

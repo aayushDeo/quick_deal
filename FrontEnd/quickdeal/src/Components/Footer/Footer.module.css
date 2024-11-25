@@ -1,0 +1,29 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500&family=Inter:wght@800;900&family=Rubik:wght@800&display=swap");
+
+.main {
+    background-color: #4a4360;
+    font-family: "DM Sans", sans-serif;
+    padding: 20px;
+    color: white;
+    min-height: 80px; /* Change max-height to min-height */
+    display: flex;
+    flex-direction: row; /* Set flex-direction to column */
+    justify-content: flex-start; /* Align content to the bottom */
+}
+
+/* Add this to make the footer stretch across the width */
+.footer {
+    margin-top: auto; /* Push the footer to the bottom */
+}
+
+.info {
+    margin: 3px;
+    padding: 3px;
+    display: flex;
+    gap: 8px;
+}
+
+#link {
+    text-decoration: none;
+    color: white;
+}
